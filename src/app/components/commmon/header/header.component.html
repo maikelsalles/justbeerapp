@@ -1,0 +1,27 @@
+<header id="masterhead" (clickOutside)="onClickedOutside($event)">
+    <button id="nav-toggle" (click)="toggleNavigation()" aria-controls="main-navigation" [attr.aria-expanded]="!menuCollapsed" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+    <div class="brand-container col-12 col-md-3 col-lg-5">
+        <a [routerLink]="['/']" title="Home Page" routerLinkActive="router-link-active" >
+            <img width="220" src="assets/logo-jb-colour-w-white-slogan.svg" alt="Just Beer">
+        </a>
+    </div>
+    <nav id="main-navigation" [class.collapsed]="menuCollapsed === false" class="col-md-9 col-lg-7">
+        <ul>
+            <li>
+                <a [routerLink]="['/news']" routerLinkActive="router-link-active"><i class="fa-solid fa-beer-mug-empty"></i> News</a> 
+            </li>
+            <li>
+                <a [routerLink]="['/about']" routerLinkActive="router-link-active"><i class="fa-solid fa-info-circle"></i> About</a> 
+            </li>
+            <li>
+                <a [routerLink]="['/contact']" routerLinkActive="router-link-active"><i class="fa-solid fa-envelope"></i> Contact</a> 
+            </li>
+            <li>
+                <a href="https://justbeerapp.com/signin" target="_blank"><i class="fa-solid fa-power-off"></i> Sign In</a> 
+            </li>
+        </ul>
+    </nav>
+</header>

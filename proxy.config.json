@@ -1,0 +1,10 @@
+{
+    "/articles/*": {
+        "target": "https://justbeerapp.com/api/v8/",
+        "secure": true,
+        "pathRewrite": {
+           "^/ap": "/"
+          },
+        "changeOrigin": true
+    }
+}

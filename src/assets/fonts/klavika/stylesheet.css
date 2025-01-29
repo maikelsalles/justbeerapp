@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Klavika Bd';
+    src: url('Klavika-Bold.eot');
+    src: url('Klavika-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Klavika-Bold.woff2') format('woff2'),
+        url('Klavika-Bold.woff') format('woff'),
+        url('Klavika-Bold.ttf') format('truetype'),
+        url('Klavika-Bold.svg#Klavika-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klavika Lt';
+    src: url('Klavika-Light.eot');
+    src: url('Klavika-Light.eot?#iefix') format('embedded-opentype'),
+        url('Klavika-Light.woff2') format('woff2'),
+        url('Klavika-Light.woff') format('woff'),
+        url('Klavika-Light.ttf') format('truetype'),
+        url('Klavika-Light.svg#Klavika-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

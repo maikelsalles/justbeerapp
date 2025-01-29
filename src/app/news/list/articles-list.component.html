@@ -1,0 +1,15 @@
+<div class="container">
+    <section class="cards">
+        <article class="card" *ngFor="let article of articles.slice(0, 9)">
+            <a [routerLink]="['/news', article.permalink.slug]" title="{{ article.title }}" aria-hidden="true" rel="nofollow" tabindex="-1">
+                <img width="150" src="{{ article.images.feature.mobile.link }}" alt=" " />
+            </a>
+            <span class="cat">{{ article.category }}</span>
+            <h3>
+                <a [routerLink]="['/news', article.permalink.slug]" title="{{ article.title }}">
+                    <strong>{{ article.title }}</strong>
+                </a>
+            </h3>
+        </article>
+    </section>
+</div>

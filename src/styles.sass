@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@use './assets/style/_variables' as *
+:root
+    font-size:16px
+
+body
+    min-width: 320px
+    font-size: 16px
+
+h1
+    @include header1
+h2
+    @include header2
+h3
+    @include header3
+h4
+    @include header4
+h5
+    @include header5
+p
+    @include paragraph
+.small
+    @include small
+
+a
+    transition: .3s ease
+
+
+// article
+
+.imageArticle
+    max-height: 70vh
+    overflow: hidden
+    img
+        width: 100%
+.cat
+    @include header4
+    position: relative
+    display: inline-block
+    color: $gray-dark
+    display: flex
+    gap: 8px
+    align-items: center
+    &:before
+        content: " "
+        display: inline-block
+        width: 8px
+        height: 24px
+        background-color: $blue-default
+        border-radius: 0px 16px 0px 16px
+.big-text
+    @include header4
